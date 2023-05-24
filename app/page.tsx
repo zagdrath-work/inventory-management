@@ -14,7 +14,6 @@ export const metadata: Metadata = {
 
 export default async function Page() {
     const entries = await getEntries();
-
     return (
         <div>
             {entries?.map((entry) => {
@@ -26,7 +25,6 @@ export default async function Page() {
 
 function Entry({ entry }: any) {
     const { manufacturer, model, description, category, quantity, image } = entry || {};
-
     return (
         <div>
             <p>{manufacturer}</p>
