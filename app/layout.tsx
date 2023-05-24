@@ -1,7 +1,7 @@
 import RootFooter from "./components/footer";
-import RootSidebar from "./components/sidebar";
+import RootHeader from "./components/header";
 
-import './globals.css';
+import "./globals.css";
 
 export default function RootLayout({
     children,
@@ -11,6 +11,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="dark bg-gray-700">
             <body>
+                <RootHeader />
                 {children}
                 <RootFooter />
             </body>
